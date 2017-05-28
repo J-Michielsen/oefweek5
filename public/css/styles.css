@@ -1,0 +1,173 @@
+body {
+  font-family: helvetica;
+  width: 90%;
+  margin: 25px auto;
+  line-height: 1.4em;
+  background-color: dimgray;
+}
+
+.flex {
+  display: flex;
+}
+
+section {
+  margin: 25px auto;
+  background-color: rgba(255,255,255, 1);
+  padding: 2%;
+  width: 60%;
+}
+
+.twitter {
+  margin: 25px -170px;
+  float: right;
+  width: 40%;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 10px 0;
+}
+
+h1, title {
+  font-size: 3.2em;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  padding: 3%;
+  font-family: 'Days One', sans-serif;
+}
+
+h2 {
+  margin: 25px 0;
+  font-size: 1.7em;
+  font-family: 'Anton', sans-serif;
+}
+
+h3 {
+  display: inline;
+  margin: 20px 0;
+}
+
+h4 {
+  display: inline;
+  margin: 20px 0;
+  text-align: right;
+  float: right;
+}
+
+h5 {
+  text-align: center;
+}
+
+nav {
+  color: white;
+  background-color: black;
+  padding: 1%;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
+  font-style: normal;
+  text-decoration: none;
+}
+
+nav a {
+  color: white;
+  display: inline-block;
+  margin-right: 65px;
+  text-decoration: none;
+  font-style: normal;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+a:hover {
+  color: dimgray;
+}
+
+.cat {
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 0.7em;
+}
+
+.gepost {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.source {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 0.6em;
+}
+
+.datum {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 0.9em;
+}
+
+.summary {
+  width: 65%;
+  text-align: justify;
+}
+
+span {
+  font-weight: bold;
+}
+
+.devider {
+  color: lightgrey;
+  text-align: center;
+  color: grey;
+}
+
+/*flickity*/
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+.head {
+  background-color: dimgray;
+}
+
+.carousel {
+  width: 600px;
+  height: 300px;
+  margin: auto;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 300px;
+  background: #333;
+}
+
+.carousel-cell-image {
+  display: block;
+  max-height: 100%;
+  height: 300px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 1.5%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+}
+
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}

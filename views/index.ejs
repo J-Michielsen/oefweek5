@@ -1,0 +1,58 @@
+<% include header %>
+<a name="top"></a>
+<h1>IGN News</h1>
+
+<nav>
+  <% for (var i = 0; i < categorieen.length; i++) { %>
+    <a href="/categorieen/<%- i %>"><%- categorieen[i] %></a>
+  <% } %>
+</nav>
+
+<div class="flex">
+<section class="head">
+  <div class="half center">
+    <div class="carousel"
+   data-flickity='{ "lazyLoad": true }'>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="/img/4231643-1.jpg" alt="Geralt" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="/img/1047178140.jpg" alt="Max" />
+  </div>
+      <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="/img/4105804405-1.jpg" alt="E3" />
+  </div>
+      <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="/img/31365964945-1.jpg" alt="Lego" />
+  </div>
+      <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="/img/nintendo-switch.jpg" alt="Switch" />
+  </div>
+</section>
+</div>
+
+  <% var teller = 1; %>
+  <% nieuws.forEach(function(item){ %>
+    <section>
+        <h2>
+          <a href=/items/<%- item.id %>><%- item.titel %></a>
+        </h2>
+        <img src="/img/<%- item.afbeeldings %>" alt="<%- item.titel %>">
+        <p class="datum"><%- item.datum %></p>
+
+        <p class="summary">
+          <%- item.samenvatting %>
+        </p>
+    </section>
+
+
+    <div class= "devider">––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––</div>
+    <% teller++;}); %>
+
+
+<% include footer %>
